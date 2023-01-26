@@ -46,7 +46,7 @@ class WeatherViewModel : ObservableObject{
                 if(self.currentCity != nil){
                     self.currentCity?.city = city.name
                     self.currentCity?.main.f = self.currentCity?.main.temp
-                    self.currentCity?.main.c = (((self.currentCity?.main.temp)! - 32) * (5/9))
+                    self.currentCity?.main.c = Utils.fToC(F: (self.currentCity?.main.temp)!)
                 }
                 let randomInt = Int.random(in: 1...2)
                 self.time = randomInt
@@ -54,6 +54,7 @@ class WeatherViewModel : ObservableObject{
             
         }
     }
+    
     
     func getWeatherByUnits(cityData:WeatherResponse?)-> Float{
         if(currentCity != nil){

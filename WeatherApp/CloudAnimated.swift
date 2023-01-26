@@ -17,7 +17,7 @@ struct CloudAnimated: View {
             .offset(x:circularMovment ? -10 : 10,y:circularMovment ? -10 : 10)
             .animation(.easeInOut(duration: 5).repeatForever(autoreverses: true), value: circularMovment)
             .onAppear{
-                circularMovment = !circularMovment
+                circularMovment = true
             }
             .foregroundColor(.gray)
     }

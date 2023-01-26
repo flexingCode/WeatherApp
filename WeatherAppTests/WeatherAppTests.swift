@@ -32,5 +32,9 @@ final class WeatherAppTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testTemperatureChange(){
+        XCTAssertEqual(Utils.fToC(F: 32), 0, "32 F is 1 Celcius")
+    }
 
 }
