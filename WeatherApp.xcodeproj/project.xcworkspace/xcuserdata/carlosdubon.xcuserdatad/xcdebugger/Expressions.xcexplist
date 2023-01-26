@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "default argument 1 of static WeatherService.WeatherRequest&lt;&#x3c4;_0_0&gt;(path:params:type:compHandler:):WeatherService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "params">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
